@@ -10,7 +10,7 @@ In this study, Python language is preferred to prepare test scenaios and maintai
 - Node.js
 - Android Studio
 - Java
-- Appium (Server) - Only command-line is officialy supported, Desktop GUI is not supported
+- Appium Server
 - Appium Flutter Driver
 - Code Editor(VS Code preferred)
 
@@ -104,6 +104,99 @@ Android Studio is necessary for running Android emulators and managing the Andro
   sdkmanager --list
   ```
 
+### 4. Java (Required for Android Testing)
+
+Java is needed to run Android-based tests and for Appium to interact with the Android Emulator.
+
+  - **macOS**:
+
+    Download Java from the official [website](https://www.java.com/en/download/manual.jsp). Or install using Homebrew:
+      ```bash
+      brew install openjdk@8
+      ```
+
+  - **Windows**:
+
+    Download Java from Oracle JDK or AdoptOpenJDK [(website)](https://www.java.com/en/download/manual.jsp). Set the `JAVA_HOME` environment variable and update the `Path` variable in system settings.
+
+  - **Linux**:
+    
+    Download Java from the official [website](https://www.java.com/en/download/manual.jsp). Or install via apt:
+      ```bash
+      sudo apt update
+      sudo apt install openjdk-8-jdk
+      ```
+    
+    Set JAVA_HOME (common across all OS) by adding the following to .bash_profile, .zshrc, or .bashrc:
+      ```bash
+      #paths depends on where Java is installed 
+      export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) #macOS
+      export JAVA_HOME='C:/Program Files/Java' #Windows
+      export JAVA_HOME=/usr/bin/java #Linux
+      export ANDROID_HOME=/Users/<username>/Library/Android/sdk
+      export PATH=$JAVA_HOME/bin:$PATH
+      export PATH=$PATH:$ANDROID_HOME/platform-tools
+      export PATH=$PATH:$ANDROID_HOME/tools
+      export PATH=$PATH:$ANDROID_HOME/tools/bin
+      export PATH=$PATH:$ANDROID_HOME/emulator
+      ```
+  
+  **Verify Installation**:
+  ```bash
+  java -version
+  ```
+
+### 5. Appium Server (Core for Automation)
+
+Appium is the test server required for running the automation scripts. Download Appium Server from the official [website](https://appium.io/docs/en/2.17/quickstart/install/). Or install via npm for all platforms:
+  ```bash
+  npm install -g appium
+  ```
+  
+  **Verify Installation**:
+  ```bash
+  appium -v
+  ```
+
+### 6. Appium Flutter Driver (Required for Flutter Testing)
+The Appium Flutter Driver is necessary for running tests on Flutter apps. Install the driver via npm for all platforms:
+  ```bash
+  npm install -g appium-flutter-driver
+  ```
+
+  **Verify Installation**:
+  ```bash
+  appium driver list
+  ```
+
+### 7. Code Editor (VS Code)
+You’ll need a code editor to write and manage your test scripts. Common Requirement: Visual Studio Code (VS Code) is widely used in Flutter development.
+
+  - **macOS**:
+    
+    Download from the Visual Studio [website](https://code.visualstudio.com/download). Install the .dmg file and follow the installation process. Or install via Homebrew:
+    
+      ```bash
+      brew install --cask visual-studio-code
+      ```
+
+  - **Windows**:
+
+    Download from the Visual Studio [website](https://code.visualstudio.com/download). Run the installer and follow the prompts to set up the editor.
+
+  - **Linux**:
+    
+    Download from the Visual Studio [website](https://code.visualstudio.com/download). Alternatively, install via the package manager:
+
+      ```bash
+      sudo apt update
+      sudo apt install code
+      ```
+  
+  **Verify Installation**:
+  ```bash
+  code -v
+  ```
 
 ## Setup Environment
 
