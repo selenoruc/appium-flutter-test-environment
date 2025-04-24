@@ -247,6 +247,23 @@ Appium Server handles appium requests and sends it to the mobile device. You can
 For further configuration and parameters, you can check out the official [(guide)](https://appium.io/docs/en/2.3/cli/args/).
 
 ### Configure & Connect Appium Inspector
+Appium Inspector is a GUI assistant tool for Appium, providing visual inspection of the application under test. It can show the application page screenshot along with its page source, and includes various features for interacting with the app. To configure the inspector, Remote Host, Remote Path and Remote Port are assential.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0900c511-c509-4932-b5d0-171a25196b1b" width="700"/>
+</p>
+
+  ```bash
+  {
+    "platformName": "Android",
+    "appium:deviceName": "emulator-5554",
+    "appium:automationName": "Flutter",
+    "appium:app": "/<apk-path>",
+    "appium:retry_backoff_time": 2000,
+    "appium:maxRetryCount": 5
+  }
+  ```
+
 ## Write First Code to Connect Flutter Application
 
 ## Important Notes & Common Issues
