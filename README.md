@@ -217,13 +217,35 @@ Android device is a virtual mobile device to run and simulate the applications w
   <img src="https://github.com/user-attachments/assets/e9f82449-8826-411a-8373-3f2e2198654b" width="700"/>
 </p>
 
-Then, open Virtual Device Manager and create or run the listed emulator.
+Then, open Virtual Device Manager and create or run the listed emulator. You can use 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/42a05c97-01e0-4324-985e-d715ec293edc" width="700"/>
 </p>
 
+You can use the online Android devices via:
+
+  ```bash
+  adb devices
+  ```
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e9e49e79-b387-458f-8417-cab284164ec1" width="500"/>
+</p>
+
 ### Start Appium Server
+Appium Server handles appium requests and sends it to the mobile device. You can run the server by simply run ```appium``` on the terminal. You can configure the server for all devices in the local network safely:
+
+  ```bash
+  appium server -p 4723 -a 0.0.0.0 -pa /wd/hub --allow-cors
+  ```
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f3241079-8459-41b8-9f85-3bf7fbe41d6b" width="700"/>
+</p>
+
+For further configuration and parameters, you can check out the official [(guide)](https://appium.io/docs/en/2.3/cli/args/).
+
 ### Configure & Connect Appium Inspector
 ## Write First Code to Connect Flutter Application
 
