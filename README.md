@@ -114,7 +114,19 @@ Java is needed to run Android-based tests and for Appium to interact with the An
       ```bash
       brew install openjdk@8
       ```
-
+      
+      Set JAVA_HOME (common across all OS) by adding the following to .bash_profile, .zshrc, or .bashrc:
+      ```bash
+      #paths depends on where Java is installed 
+      export JAVA_HOME=/usr/bin/java
+      export ANDROID_HOME=/Users/<username>/Library/Android/sdk
+      export PATH=$JAVA_HOME/bin:$PATH
+      export PATH=$PATH:$ANDROID_HOME/platform-tools
+      export PATH=$PATH:$ANDROID_HOME/tools
+      export PATH=$PATH:$ANDROID_HOME/tools/bin
+      export PATH=$PATH:$ANDROID_HOME/emulator
+      ```
+      
   - **Windows**:
 
     Download Java from Oracle JDK or AdoptOpenJDK [(website)](https://www.java.com/en/download/manual.jsp). Set the `JAVA_HOME` environment variable and update the `Path` variable in system settings.
