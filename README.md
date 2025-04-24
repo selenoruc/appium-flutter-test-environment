@@ -315,3 +315,13 @@ scroll_until_visible(driver, "nextItem", 10)
 
 ## Important Notes & Common Issues
 
+- **If you want to start/boot the already created emulator on terminal:** You can check the commands [here](https://developer.android.com/studio/run/emulator-commandline) 
+- **If you got a cache issue on the app re-run:** You can try to add ```"fullReset":true,``` in the desired capabilities list.
+- **If you want to you the Appium Desktop(UI for Server):** You should check [here](https://github.com/appium/appium-desktop) for version compatibility(latest versions are not supported).
+- **If you got a socket error on Appium Server console:** You can try the solution [here](https://stackoverflow.com/questions/59075420/an-unknown-server-side-error-occurred-while-processing-the-command-could-not-pr)
+- **If you got the "ext.flutter.driver" is not found in "extensionRPCs" error:** You can check out the solutions [solution1](https://stackoverflow.com/questions/58729864/ext-flutter-driver-is-not-found-in-extensionrpcs-what-would-be-the-issue) - [solution2](https://github.com/appium/appium-flutter-driver/issues/28) - [solution3](https://github.com/appium/appium-flutter-driver/issues/27)
+- **If you got the Dart Observatory error as below:** You can check out the solution [here](https://stackoverflow.com/questions/75872588/appium-flutter-check-dart-observatory-uri-no-uri-found-in-the-device-log).
+
+  <p align="center">
+  <img src="https://github.com/user-attachments/assets/11bba868-1f0e-4826-94c0-effe5e3546a1" width="400"/>
+  </p>
