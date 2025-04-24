@@ -130,9 +130,7 @@ Java is needed to run Android-based tests and for Appium to interact with the An
     Set JAVA_HOME (common across all OS) by adding the following to .bash_profile, .zshrc, or .bashrc:
       ```bash
       #paths depends on where Java is installed 
-      export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) #macOS
-      export JAVA_HOME='C:/Program Files/Java' #Windows
-      export JAVA_HOME=/usr/bin/java #Linux
+      export JAVA_HOME=/usr/bin/java
       export ANDROID_HOME=/Users/<username>/Library/Android/sdk
       export PATH=$JAVA_HOME/bin:$PATH
       export PATH=$PATH:$ANDROID_HOME/platform-tools
