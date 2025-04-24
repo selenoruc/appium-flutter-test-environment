@@ -210,6 +210,21 @@ You’ll need a code editor to write and manage your test scripts. Common Requir
 
 ## Setup Environment
 
+### Prepare Android Device(Emulator)
+Android device is a virtual mobile device to run and simulate the applications without a physical requirement. To create and start the device, you can check out the official [website](https://developer.android.com/studio/run/emulator). Also, you can create & run the emulator via terminal[(website)](https://developer.android.com/studio/run/emulator-commandline). As shown below, you can create and run the emulator by open Android Studio → Tools → SDK Manager → SDK Tools veya Appearance & Behaviour → System Settings → Android SDK → SDK Tools and select Android Emulator and Android SDK Platform-Tools
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e9f82449-8826-411a-8373-3f2e2198654b" width="700"/>
+</p>
+
+Then, open Virtual Device Manager and create or run the listed emulator.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/42a05c97-01e0-4324-985e-d715ec293edc" width="700"/>
+</p>
+
+### Start Appium Server
+### Configure & Connect Appium Inspector
 ## Write First Code to Connect Flutter Application
 
 ## Important Notes & Common Issues
