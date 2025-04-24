@@ -265,5 +265,53 @@ Appium Inspector is a GUI assistant tool for Appium, providing visual inspection
   ```
 
 ## Write First Code to Connect Flutter Application
+Here is a sample Appium connection test script for Flutter apps. Also, you can configure and add more abilities to your code via official [(commands-execute)](https://github.com/appium/appium-flutter-driver/blob/main/driver/lib/commands/execute.ts). Here is another example for python code: [flutter-driver-python-example](https://github.com/appium/appium-flutter-driver/blob/main/example/python/example.py)
+
+```python
+import time
+import json
+from appium import webdriver
+from appium.webdriver.common.touch_action import TouchAction
+
+# Desired Capabilities Definition
+desired_capabilities = {
+    "platformName": "Android",
+    "appium:deviceName": "emulator-5554",
+    "appium:automationName": "Flutter",
+    "appium:app": "/<apk-path>",
+    "appium:retry_backoff_time": 2000,
+    "appium:maxRetryCount": 5,
+}
+
+#Create a Driver Instance
+driver = webdriver.Remote(command_executor='http://127.0.0.1:4723/wd/hub',desired_capabilities=capabilities)
+driver.implicitly_wait(5)
+
+# Step 1: Launch the app
+flutter_launch_app(driver, "myFlutterApp", ["--start-first-screen"])
+
+# Step 2: Wait for an element to be visible
+wait_for(driver, "loginButton", 10)
+
+# Step 3: Click the login button
+click_element(driver, "loginButton", 10)
+
+# Step 4: Enter credentials
+set_value(driver, "usernameField", "testuser")
+set_value(driver, "passwordField", "password123")
+
+# Step 5: Submit login form
+click_element(driver, "submitButton", 10)
+
+# Step 6: Check if the user is logged in
+wait_for(driver, "homePage", 15)
+assert get_text(driver) == "Welcome to Home Page"
+
+# Step 7: Perform scroll action
+scroll(driver, "homePageList", "down")
+scroll_until_visible(driver, "nextItem", 10)
+
+```
 
 ## Important Notes & Common Issues
+
