@@ -4,7 +4,7 @@ In this repository, the aim is to share the knowledge by experience and help you
 The detailed steps, key notes and solutions will be shared under the /docs folder.
 
 ## Requirements
-In this study, Python language is preferred to prepare test scenaios and maintain all the automation results. So, here are the requirements(We will share a setup.sh to install all of them quicker :) )
+In this study, Python language is preferred to prepare test scenaios and maintain all the automation results. So, here are the requirements(You can check the environment-setup.sh file for quicker way):
 
 - Python
 - Node.js
