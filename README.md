@@ -250,7 +250,7 @@ For further configuration and parameters, you can check out the official [(guide
 Appium Inspector is a GUI assistant tool for Appium, providing visual inspection of the application under test. It can show the application page screenshot along with its page source, and includes various features for interacting with the app. To configure the inspector, Remote Host, Remote Path and Remote Port are assential.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0900c511-c509-4932-b5d0-171a25196b1b" width="700"/>
+  <img src="https://github.com/user-attachments/assets/11047eec-a9b5-4437-9bc5-57ec7673f25b" width="700"/>
 </p>
 
   ```bash
