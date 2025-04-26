@@ -4,7 +4,7 @@ In this repository, the aim is to share the knowledge by experience and help you
 The detailed steps, key notes and solutions will be shared under the /docs folder.
 
 ## Requirements
-In this study, Python language is preferred to prepare test scenaios and maintain all the automation results. So, here are the requirements(We will share a setup.sh to install all of them quicker :) )
+In this study, Python language is preferred to prepare test scenaios and maintain all the automation results. So, here are the requirements(You can check the environment-setup.sh file for quicker way):
 
 - Python
 - Node.js
@@ -250,7 +250,7 @@ For further configuration and parameters, you can check out the official [(guide
 Appium Inspector is a GUI assistant tool for Appium, providing visual inspection of the application under test. It can show the application page screenshot along with its page source, and includes various features for interacting with the app. To configure the inspector, Remote Host, Remote Path and Remote Port are assential.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0900c511-c509-4932-b5d0-171a25196b1b" width="700"/>
+  <img src="https://github.com/user-attachments/assets/11047eec-a9b5-4437-9bc5-57ec7673f25b" width="700"/>
 </p>
 
   ```bash
